@@ -41,8 +41,6 @@ function App() {
   }
 
   function persistData(newList){
-    console.log(JSON.stringify({objeto:objeto},null,2));
-    console.log(JSON.stringify(objeto,["name","age","height"],2));
     localStorage.setItem('todos',JSON.stringify({todos:newList}))
   }
 
